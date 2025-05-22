@@ -1,0 +1,37 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          // Condition 1: Origin country is either America or Mexico
+          "terms": {
+            "origin_country.keyword": ["America", "Mexico"]
+          }
+        },
+        {
+          // Condition 2: Review is either "good" OR the review field does not exist
+          "bool": {
+            "should": [
+              {
+                // Sub-condition A: Review is "good"
+                "term": {
+                  "review.keyword": "good"
+                }
+              },
+              {
+                // Sub-condition B: The "review" field does not exist (i.e., no review)
+                "bool": {
+                  "must_not": {
+                    "exists": {
+                      "field": "review"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
