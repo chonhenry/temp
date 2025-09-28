@@ -1,37 +1,23 @@
+POST /my_products/_update/123
+{
+  "doc": {
+    "price": 24.99,
+    "in_stock": true
+  }
+}
+
+POST /my_products/_update_by_query
 {
   "query": {
-    "bool": {
-      "must": [
-        {
-          // Condition 1: Origin country is either America or Mexico
-          "terms": {
-            "origin_country.keyword": ["America", "Mexico"]
-          }
-        },
-        {
-          // Condition 2: Review is either "good" OR the review field does not exist
-          "bool": {
-            "should": [
-              {
-                // Sub-condition A: Review is "good"
-                "term": {
-                  "review.keyword": "good"
-                }
-              },
-              {
-                // Sub-condition B: The "review" field does not exist (i.e., no review)
-                "bool": {
-                  "must_not": {
-                    "exists": {
-                      "field": "review"
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        }
-      ]
+    "term": {
+      "price": 9.99
+    }
+  },
+  "script": {
+    "source": "ctx._source.in_stock = params.new_status",
+    "lang": "painless",
+    "params": {
+      "new_status": false
     }
   }
 }
