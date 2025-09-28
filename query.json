@@ -21,3 +21,59 @@ POST /my_products/_update_by_query
     }
   }
 }
+
+///////////////////////////////////////////////////////////////
+
+{
+  "took": 2,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 2,
+      "relation": "eq"
+    },
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": "test_data",
+        "_id": "1",
+        "_score": 1.0,
+        "_source": {
+          "product_name": "Cooling Fan",
+          "price": 29.99,
+          "in_stock": true
+        }
+      },
+      {
+        "_index": "test_data",
+        "_id": "2",
+        "_score": 1.0,
+        "_source": {
+          "product_name": "Wireless Mouse",
+          "price": 45.50,
+          "in_stock": false
+        }
+      }
+    ]
+  }
+}
+
+PUT test_data/_doc/3
+{
+  "product_name": "Mechanical Keyboard",
+  "price": 110.00,
+  "in_stock": true
+}
+
+PUT test_data/_doc/4
+{
+  "product_name": "USB-C Hub",
+  "price": 39.99,
+  "in_stock": true
+}
