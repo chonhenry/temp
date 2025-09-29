@@ -77,3 +77,9 @@ PUT test_data/_doc/4
   "price": 39.99,
   "in_stock": true
 }
+
+POST _bulk
+{ "index" : { "_index" : "test_data", "_id" : "3" } }
+{ "product_name": "Mechanical Keyboard", "price": 110.00, "in_stock": true }
+{ "index" : { "_index" : "test_data", "_id" : "4" } }
+{ "product_name": "USB-C Hub", "price": 39.99, "in_stock": true }
