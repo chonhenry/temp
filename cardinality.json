@@ -1,0 +1,32 @@
+GET portfolio_view_index/_search {
+  "size": 0,
+  "aggs": {
+    "by_portfolio": {
+      "terms": {
+        "field": "portfolioName",
+        "size": 1000
+      },
+      "aggs": {
+        "owner_info": {
+          "top_hits": {
+            "size": 1,
+            "_source": [
+              "portfolioOwnerName",
+              "portfolioOwnerSid"
+            ]
+          }
+        },
+        "sealId_count": {
+          "cardinality": {
+            "field": "sealId"
+          }
+        },
+        "datasetId_count": {
+          "cardinality": {
+            "field": "datasetId"
+          }
+        }
+      }
+    }
+  }
+}
