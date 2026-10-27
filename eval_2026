@@ -1,0 +1,58 @@
+What you achieved (long version)
+1. Delivered the guided policy creation form in Policy Studio (Accelerating Impact)
+I owned the full UI build of the guided form in Policy Studio, which lets users create policies through a structured, step-by-step form instead of writing them in free text. Previously, policies were written in natural language, which introduced human error and inconsistency. The guided form captures the same required fields for every policy and validates input at creation time. That makes policies consistent and complete, reduces review rework, and lowers the barrier for users who don’t know policy phrasing. It also produces structured, machine-readable policies that are easier to search, audit, and enforce downstream.
+2. Built foundational components for Data Usage Monitoring (Accelerating Impact; Reuse)
+I helped lay the foundation for Data Usage Monitoring. I implemented the AG Grid data display, created the GraphQL endpoint, and connected the backend service to OpenSearch. This established the core data path, from search index to API to UI, that later features build on, and gave users a scalable way to view and explore usage data [for X records / X users].
+3. Built and maintained a range of features across ARIA (Accelerating Impact)
+I was a consistent contributor to ARIA throughout the year, building and maintaining features across the workflow. These included dataset accept/reject, AG Grid pagination, and search and filtering [add others if any]. These features improved how users review and navigate datasets, especially at larger data volumes, and I supported them through enhancements and fixes after release.
+4. Contributed to building the Task Service and integrating it into ARIA (Accelerating Impact; Reuse)
+I helped build the Task Service, including the backend REST endpoints for creating, updating, and deleting tasks. I also integrated it into the ARIA workflow and UI so users can create Keyword and Business Contact tasks directly within ARIA. This brought task management into the application where the work happens, [replacing manual tracking / email follow-ups if true], and created a service that can be extended to other task types.
+5. Kept applications aligned with firm engineering standards through Photon upgrades and TrueCD onboarding (Discover. Reuse. Automate.; Security & Resiliency)
+I upgraded [N] applications to the latest version of Photon, the firm’s microservice framework, keeping them on a supported, secure foundation [and remediating X vulnerabilities, if applicable]. I also onboarded [N] applications to TrueCD, adopting the firm’s standardized test and release automation practices. This automated [testing / release steps] so we could ship faster without compromising quality. Both efforts reused existing firm frameworks rather than building custom solutions.
+6. Used AI tools as a force multiplier in my daily engineering work (AI as a Force Multiplier)
+I regularly used approved AI tools, including GitHub Copilot, LLM Suite, and AI Agent Skills, across the development lifecycle. I used them to write code, debug issues, analyze unfamiliar codebases, and produce technical documentation. This was especially valuable when ramping up on new areas like the Data Usage Monitoring stack and the Task Service, and when working on repetitive work such as the Photon upgrades across multiple applications. [Add an example or estimate, e.g. “cut ramp-up time on a new codebase from ~X days to ~Y” or “generated unit tests that raised coverage to X%.”]
+
+Development opportunities (long version)
+1. Deepen my backend and system design skills and lead a feature end to end
+Much of my impact this year was on the UI and on contributing to backend services others designed. Next year, I want to own a feature from design through delivery. That means writing the design doc, making the architecture and API decisions, building across frontend and backend, and driving it to production. I’ll ask my manager for an opportunity to lead a feature, seek design reviews from senior engineers, and take on more backend work in services like the Task Service.
+2. Build infrastructure and cloud expertise
+To design and deliver complete solutions, I need stronger infrastructure and cloud knowledge. I plan to study for and earn an AWS certification [e.g. AWS Certified Developer – Associate] in 2027, and apply what I learn by taking on deployment, infrastructure, or cloud-related tasks on my team’s applications.
+
+What you achieved (short version)
+1. Delivered the guided policy creation form in Policy Studio
+I owned the UI for a guided form that replaced free-text policy writing with a structured, step-by-step format. Natural-language policies were prone to human error and inconsistency. The form captures standard fields, validates input, and produces structured policies that are easier to review, audit, and enforce.
+2. Built foundational components for Data Usage Monitoring
+I helped build the foundation of Data Usage Monitoring by implementing the AG Grid data display and the GraphQL endpoint, and by connecting the backend to OpenSearch. This established the core data path that later features build on.
+3. Built and maintained features across ARIA
+I delivered multiple ARIA features, including dataset accept/reject, AG Grid pagination, and search and filtering. I supported them through enhancements and fixes, improving how users review and navigate datasets.
+4. Contributed to the Task Service and its ARIA integration
+I built backend REST endpoints for creating, updating, and deleting tasks, and integrated the service into ARIA so users can create Keyword and Business Contact tasks within their workflow.
+5. Aligned applications with firm engineering standards
+I upgraded [N] applications to the latest version of Photon, the firm’s microservice framework, and onboarded [N] applications to TrueCD for automated testing and release. This reused firm standards rather than custom solutions, improving security, quality, and delivery speed.
+6. Used AI tools as a force multiplier
+I regularly used GitHub Copilot, LLM Suite, and AI Agent Skills to write code, debug, analyze codebases, and write technical documentation. This sped up ramp-up on new codebases and repetitive work like the Photon upgrades. [Add one example or time saving.]
+
+Development opportunities (short version)
+1. Deepen backend and system design skills by leading a feature end to end
+Next year I want to own a feature from design through delivery, including the design doc, architecture, and full-stack build. I’ll ask my manager for the opportunity and seek design reviews from senior engineers.
+2. Build infrastructure and cloud expertise
+I plan to earn an AWS certification in 2027 and apply it by taking on deployment and infrastructure work on my team’s applications.
+
+-------------------------------------------------------------------------------------
+How you achieved it
+1. Listened deeply and adapted quickly on the Policy Studio form (Earn trust: Listen deeply)
+I built the guided form from a provided mockup. During implementation, I proactively improved the UI/UX to make it more user-friendly. When users, the product team, and leads gave feedback, I quickly turned it into changes, so the final form reflected what users needed rather than just the original design.
+2. Asked for help and stayed open to better ideas (Earn trust: Maintain humility)
+When I was blocked or unsure, I asked teammates for help instead of losing time working alone. When others proposed a better approach than mine, I adopted it, putting the best outcome for the project ahead of my own idea.
+3. Collaborated across teams to stay aligned (Do the right thing: Work as one)
+I worked closely with another team on the same project to keep our goals aligned and share knowledge. This reduced duplicated effort and helped both teams move toward the same outcome.
+4. Used AI tools to learn fast and deliver across multiple applications (Improve relentlessly: Learn fast)
+I used GitHub Copilot, LLM Suite, and AI Agent Skills to analyze unfamiliar codebases, debug issues, write code, and produce technical documentation. This helped me ramp up quickly and contribute across four applications this year: Policy Studio, ARIA, Data Usage Monitoring, and Task Service.
+5. Followed firm standards for quality and security (Do the right thing: Act with discipline)
+I upgraded applications to the latest version of Photon and onboarded them to TrueCD. This kept them on supported, secure frameworks and made sure faster delivery came with automated testing and release controls.
+
+Development opportunities
+1. Be more proactive and vocal in meetings (Improve relentlessly: Speak up)
+I received feedback that I should be more proactive and vocal in meetings. Next year, I’ll prepare at least one point, question, or update before key meetings, raise risks and ideas early instead of waiting to be asked, and check in with my manager mid-year to confirm the change is landing.
+2. Seek feedback more regularly (Improve relentlessly: Seek feedback)
+I want to get more consistent feedback on my work instead of waiting for the year-end review. I’ll ask my manager and peers for feedback at the end of each major feature or each quarter, and track what I change as a result.
